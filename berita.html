@@ -1,63 +1,99 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Berita - SMK Ma'arif 5 Gombong</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berita TKR</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #eef5ee;
+    }header {
+  background: #1b5e20;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.berita-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.berita-card {
+  background: #ffffff;
+  border: 1px solid #c5e1a5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.berita-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.berita-card h4 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.tanggal {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.preview {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.btn-baca {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #2e7d32;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: background 0.3s;
+}
+
+.btn-baca:hover {
+  background: #1b5e20;
+}
+
+  </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <img src="logo1.png" alt="Logo TKR" class="logo-top">
-    <h1>Jurusan Teknik Kendaraan Ringan</h1>
-    <h2>SMK Ma'arif 5 Gombong</h2>
-    <nav>
-      <ul>
-        <li><a href="index.html">Profil</a></li>
-        <li><a href="mengapa.html">Kenapa Pilih TKR</a></li>
-        <li><a href="kerjasama.html">Data Kerjasama</a></li>
-        <li><a href="guru.html">Guru Produktif</a></li>
-        <li><a href="pengumuman.html">Pengumuman</a></li>
-        <li><a href="kegiatan.html">Kegiatan</a></li>
-        <li><a href="berita.html" class="active">Berita</a></li>
-      </ul>
-    </nav>
-  </header>
+    <h1>Berita TKR SMK Ma'arif 5 Gombong</h1>
+  </header>  <section class="berita-grid">
+    <article class="berita-card">
+      <h4>Program Servis Bersama Daihatsu</h4>
+      <p class="tanggal">Gombong, 3 Juni 2025</p>
+      <p class="preview">SMK Ma’arif 5 Gombong kembali menggelar program Servis Bersama Daihatsu pada 18 Juni 2025...</p>
+      <a href="berita1.html" class="btn-baca">Baca Selengkapnya</a>
+    </article><article class="berita-card">
+  <h4>Kunjungan Industri ke Astra</h4>
+  <p class="tanggal">Gombong, 15 Mei 2025</p>
+  <p class="preview">Siswa TKR mendapatkan kesempatan kunjungan ke PT Astra Daihatsu Motor Jakarta...</p>
+  <a href="#" class="btn-baca">Baca Selengkapnya</a>
+</article>
 
-  <!-- Marquee -->
-  <div class="marquee-container">
-    <p class="marquee-text">Jalan Lingkar Selatan Nomor 32 Patemon - Gombong</p>
-  </div>
+<article class="berita-card">
+  <h4>Pelatihan Engine Scanner</h4>
+  <p class="tanggal">Gombong, 29 April 2025</p>
+  <p class="preview">Pelatihan penggunaan alat engine scanner diadakan untuk meningkatkan kompetensi siswa TKR...</p>
+  <a href="#" class="btn-baca">Baca Selengkapnya</a>
+</article>
 
-  <!-- Isi Berita -->
-  <section class="section">
-    <h3>Berita Terbaru</h3>
-
-    <article class="berita-item">
-      <h4>SMK Ma’arif 5 Gombong, Sekolah Pusat Keunggulan Berbasis Pesantren, Gelar Program Servis Bersama Daihatsu</h4>
-      <p><small>Gombong, 3 Juni 2025</small></p>
-
-      <p>SMK Ma’arif 5 Gombong, salah satu Sekolah Menengah Kejuruan (SMK) Pusat Keunggulan berbasis pesantren, terus menunjukkan komitmennya dalam menjalin sinergi antara dunia pendidikan dan dunia industri (DUDI). Salah satu bentuk nyata dari kolaborasi ini adalah kerja sama dengan PT Astra Daihatsu Motor yang telah berjalan secara aktif dan berkelanjutan.</p>
-
-      <p>Dalam kerja sama ini, terdapat dua program utama yang dijalankan: <strong>Program DUDI Mengajar</strong> dan <strong>Servis Bersama Daihatsu</strong>. Program DUDI Mengajar diselenggarakan secara rutin setiap bulan, menghadirkan praktisi dari industri untuk memberikan materi langsung kepada para siswa. Hal ini bertujuan untuk menjembatani kesenjangan antara teori di sekolah dengan praktik di dunia kerja yang sesungguhnya.</p>
-
-      <p>Sementara itu, Servis Bersama Daihatsu adalah agenda sosial dan teknis yang dilaksanakan setiap enam bulan sekali, terbuka untuk masyarakat umum. Melalui program ini, masyarakat dapat memeriksakan kondisi kendaraan mereka secara biaya terjangkau guna memastikan kendaraan tetap prima dan nyaman digunakan.</p>
-
-      <p>Dalam waktu dekat, SMK Ma’arif 5 Gombong akan kembali menggelar program Servis Bersama Daihatsu pada tanggal <strong>18 Juni 2025</strong>. Kegiatan ini akan dilangsungkan di lingkungan sekolah SMK Ma’arif 5 Gombong dan terbuka bagi pemilik kendaraan Daihatsu maupun merek lain di wilayah Gombong dan sekitarnya.</p>
-
-      <p>Pendaftaran untuk mengikuti program ini dibuka sejak <strong>29 Mei hingga 16 Juni 2025</strong>. Masyarakat yang ingin berpartisipasi dapat langsung mendaftarkan kendaraannya melalui panitia pelaksana di sekolah.</p>
-
-      <p>Melalui program ini, SMK Ma’arif 5 Gombong tidak hanya memberikan pengalaman nyata bagi siswa dalam dunia otomotif, tetapi juga turut memberikan kontribusi nyata kepada masyarakat. <em>“Sinergi antara pendidikan, industri, dan masyarakat inilah yang menjadi ciri khas dari Sekolah Pusat Keunggulan,”</em> ujar Tim Kreatif TKR (Teknik Kendaraan Ringan) SMK Ma’arif 5 Gombong.</p>
-    </article>
   </section>
-
-  <!-- Footer -->
-  <footer>
-    <img src="images/logo2.png" alt="Logo Footer" class="logo-bottom">
-    <p>&copy; 2025 SMK Ma'arif 5 Gombong | Teknik Kendaraan Ringan</p>
-  </footer>
-
 </body>
 </html>
